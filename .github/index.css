@@ -1,0 +1,9 @@
+.resultq {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+}
+.no-disp {
+  display: none;
+}
