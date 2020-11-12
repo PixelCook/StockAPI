@@ -12,23 +12,27 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   height: 4rem;
-  background-color: #135352ff;
+  background-color: #585f65;
 }
 
-nav a {
-  color: white;
+nav__a {
+  color: red;
 }
 
-nav button {
+nav__button {
   background-color: #24ce99;
 }
 
-nav button:hover {
+nav__button:hover {
   background-color: #72afbe;
 }
 
-nav input textarea {
+nav__input__textarea {
   color: #fcfcfd;
+}
+
+input {
+  background-color: black !important;
 }
 
 .resultq {

@@ -19,24 +19,29 @@ $inactive: #585f65;
 body {
   background-color: $inactive;
 }
+
 nav {
   @include flexeven();
   height: 4rem;
-  background-color: #135352ff;
-  a {
-    color: white;
+  background-color: $inactive;
+
+  &__a {
+    color: red;
   }
-  button {
+  &__button {
     background-color: $foregroundcolor;
     &:hover {
       background-color: #72afbe;
     }
   }
-  input {
-    textarea {
+  &__input {
+    &__textarea {
       color: $textcolormain;
     }
   }
+}
+input {
+  background-color: black !important;
 }
 .resultq {
   @include flexeven();
