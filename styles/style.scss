@@ -1,0 +1,92 @@
+$backgroundcolor: #1d2125;
+$foregroundcolor: #24ce99;
+$hover: #72afbe;
+$textcolormain: #fcfcfd;
+$highlightred: #c1472c;
+$inactive: #585f65;
+
+@mixin flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flexeven {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body {
+  background-color: $inactive;
+}
+nav {
+  @include flexeven();
+  height: 4rem;
+  background-color: #135352ff;
+  a {
+    color: white;
+  }
+  button {
+    background-color: $foregroundcolor;
+    &:hover {
+      background-color: #72afbe;
+    }
+  }
+  input {
+    textarea {
+      color: $textcolormain;
+    }
+  }
+}
+.resultq {
+  @include flexeven();
+  margin-top: 1rem;
+  //   box-shadow: 0 4px 8px 0 #7a6f8e, 0 6px 20px 0 black;
+  flex-direction: column;
+  list-style: none;
+  color: $textcolormain;
+  //   background-color: $inactive;
+  text-align: center;
+  //   margin-left: 30rem;
+  //   align-self: center;
+  max-width: 30%;
+  margin-left: 30%;
+  &__item {
+    width: 500px;
+    padding-top: 1rem;
+    align-self: flex-start;
+    padding-bottom: 2rem;
+    margin-left: 0;
+    background-color: $textcolormain;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    // border-bottom: 1px solid gray;
+
+    & img {
+      width: 3rem;
+      padding-right: 1rem;
+    }
+    & a {
+      color: $foregroundcolor;
+      &:hover {
+        color: $hover;
+      }
+    }
+  }
+}
+
+.no-disp {
+  display: none;
+}
+
+.profile-card {
+  align-self: center;
+  margin-left: 12rem;
+  width: 75%;
+  box-shadow: 0 4px 8px 0 $backgroundcolor;
+  text-align: center;
+}
+.description {
+  color: $textcolormain;
+}
