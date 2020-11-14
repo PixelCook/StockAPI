@@ -2,10 +2,32 @@
 <html lang="en">
   <head>
     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io (1)/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io (1)/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io (1)/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io (1)/site.webmanifest" />
+    <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
     <meta charset="UTF-8" />
@@ -13,8 +35,13 @@
     <title>Stock API</title>
   </head>
   <body>
+    <div class="marquee">
+      <div class="marquee__inner" aria-hidden="true">
+        <span class="marquee__text" id="marquee"> </span>
+      </div>
+    </div>
     <nav>
-      <a>Stock API</a>
+      <h1>Mixed Investments</h1>
       <form>
         <input
           id="search"
@@ -22,19 +49,22 @@
           placeholder="Search"
           aria-label="Search"
         />
-        <button id="searchbtn" class="btn my-2 my-sm-0" type="submit">
+        <button id="searchbtn" class="btn example_e" type="submit">
           Search
         </button>
       </form>
     </nav>
-    <div id="spinner" class="spinner-border text-danger" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
     <container>
       <div class="">
         <ul class="resultq" id="resultq"></ul>
       </div>
+      <div class="overlay"></div>
+      <div class="spanner">
+        <div class="loader"></div>
+        <p>Mixing Investments</p>
+      </div>
     </container>
+    <div id="news" class="resultq"></div>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -51,6 +81,8 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script src="./index.js"></script>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/ticker.js"></script>
+    <script src="./JS/tickerNews.js"></script>
   </body>
 </html>
