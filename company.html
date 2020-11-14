@@ -2,10 +2,32 @@
 <html lang="en">
   <head>
     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io (1)/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io (1)/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io (1)/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io (1)/site.webmanifest" />
+    <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
     <meta charset="UTF-8" />
@@ -13,14 +35,23 @@
     <title>Company Profile</title>
   </head>
   <body>
+    <nav>
+      <a class="back" href="./index.html"><h1>Mixed Investments</h1></a>
+    </nav>
     <div class="profile-card" id="profile-page">
       <div id="logo"></div>
       <div id="name"></div>
+      <div class="prices">
+        <div id="stock-price"></div>
+        <div id="change"></div>
+      </div>
       <div class="description" id="description"></div>
       <canvas id="myChart"></canvas>
       <div id="link"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
-    <script src="./company.js"></script>
+    <!-- <script src="./company.js"></script>
+    <script src="./JS/companyload.js"></script> -->
+    <script src="./JS/company.js"></script>
   </body>
 </html>
