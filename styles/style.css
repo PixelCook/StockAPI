@@ -367,4 +367,9 @@ a {
 .white {
   color: black;
 }
+
+mark {
+  background: rgba(245, 2, 2, 0.609);
+  color: black;
+}
 /*# sourceMappingURL=style.css.map */

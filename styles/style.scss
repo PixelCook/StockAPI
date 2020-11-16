@@ -5,11 +5,7 @@ $textcolormain: #fffeff;
 $highlightred: #d8a7b1;
 $inactive: #dbdbdb;
 
-// highlighter
-mark{
-  background: orange;
-  color: black;
-}
+
 
 @mixin flexcenter {
   display: flex;
@@ -314,5 +310,11 @@ a{
   color: green;
 }
 .white {
+  color: black;
+}
+
+// highlighter
+mark{
+  background: rgba(245, 2, 2, 0.609);
   color: black;
 }
