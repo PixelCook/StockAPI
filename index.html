@@ -35,34 +35,13 @@
     <title>Stock API</title>
   </head>
   <body>
-    <div class="marquee">
-      <div class="marquee__inner" aria-hidden="true">
-        <span class="marquee__text" id="marquee"> </span>
-      </div>
-    </div>
+    <div id="marqueediv" class="marquee"></div>
     <nav>
       <h1>Mixed Investments</h1>
-      <form>
-        <input
-          id="search"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button id="searchbtn" class="btn example_e" type="submit">
-          Search
-        </button>
-      </form>
+      <form id="formdiv"></form>
     </nav>
     <container>
-      <div class="">
-        <ul class="resultq" id="resultq"></ul>
-      </div>
-      <div class="overlay"></div>
-      <div class="spanner">
-        <div class="loader"></div>
-        <p>Mixing Investments</p>
-      </div>
+      <div id="responsediv"></div>
     </container>
     <div id="news" class="resultq"></div>
 
