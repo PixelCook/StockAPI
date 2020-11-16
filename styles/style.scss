@@ -5,6 +5,12 @@ $textcolormain: #fffeff;
 $highlightred: #d8a7b1;
 $inactive: #dbdbdb;
 
+// highlighter
+mark{
+  background: orange;
+  color: black;
+}
+
 @mixin flexcenter {
   display: flex;
   justify-content: center;

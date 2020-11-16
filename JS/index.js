@@ -3,10 +3,10 @@ const urlParams = new URLSearchParams(window.location.search);
 // FETCH QUERY STRING DEFINITIONS (https://davidwalsh.name/query-string-javascript)
 
 
-const spinner = document.getElementById('spinner');
-const change = document.getElementById('change');
-const formdiv = document.getElementById('formdiv');
-const responsediv = document.getElementById('responsediv');
+    const spinner = document.getElementById('spinner');
+    const change = document.getElementById('change');
+    const formdiv = document.getElementById('formdiv');
+    const responsediv = document.getElementById('responsediv');
 
 class formLoad {
     formLoad(){
@@ -25,11 +25,13 @@ class formLoad {
   <div class="spanner">
     <div class="loader"></div>
     <p>Mixing Investments</p>`
+    
     const searchResults = document.getElementById('resultq');
-  const userSearch = document.getElementById('search');
-  const searchBtn = document.getElementById('searchbtn');
-  searchBtn.addEventListener('click', resultsLoad);
-  async function resultsLoad(event){
+    const userSearch = document.getElementById('search');
+    const searchBtn = document.getElementById('searchbtn');
+
+    searchBtn.addEventListener('click', resultsLoad);
+ async function resultsLoad(event){
     activeSettings();
     event.preventDefault()
     try{
@@ -51,10 +53,15 @@ class formLoad {
         }
     }catch(error) {
         console.log(error)
-    }defaultSettings();
+    }
+    defaultSettings();
+    const context = document.querySelector(".resultq");
+    const instance = new Mark(context);
+    instance.mark(userSearch.value);
 }
 }
 }
+
 
 
 function defaultSettings(){
