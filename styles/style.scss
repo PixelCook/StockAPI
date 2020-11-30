@@ -5,6 +5,8 @@ $textcolormain: #fffeff;
 $highlightred: #d8a7b1;
 $inactive: #dbdbdb;
 
+
+
 @mixin flexcenter {
   display: flex;
   justify-content: center;
@@ -137,8 +139,6 @@ input {
   text-align: left;
   padding: 1rem;
   box-shadow: 0 30px 40px rgba(0,0,0,.1);
-  // box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
-  // border-radius: 30px;
   margin-bottom: 10px;
   max-width: 35%;
   margin-left: 30%;
@@ -149,7 +149,6 @@ input {
     padding-left: 2rem;
     padding-bottom: 2rem;
     margin-left: 0;
-    // background: rgba(76,91,97,1) 0%;//#fffdfde3;
     border-bottom: 1px solid gray;
 
     & img {
@@ -309,4 +308,10 @@ a{
 }
 .white {
   color: black;
+}
+
+// highlighter
+mark{
+  background: rgba(2, 245, 22, 0.164);
+  color: white;
 }
